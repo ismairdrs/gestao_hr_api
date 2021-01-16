@@ -3,7 +3,7 @@ from .models import Documento
 
 
 class DocumentoAdmin(admin.ModelAdmin):
-    list_display = ('nome', )
+    list_display = ('id', 'descricao', 'arquivo')
 
 
 admin.site.register(Documento, DocumentoAdmin)
